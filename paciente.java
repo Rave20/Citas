@@ -100,16 +100,16 @@ public class paciente {
         LocalDate fecha = LocalDate.parse(getUltima_cita());
         if(getEdad() >= 25 && getEdad() <= 35){
         fecha = fecha.plusDays(75);
-        System.out.println("Su proxima cita sera " + fecha);
+        System.out.println("Su proxima cita será " + fecha);
         }else if(getEdad() >= 35 && getEdad() <= 45){
             fecha = fecha.plusDays(45);
-            System.out.println("Su proxima cita sera " + fecha);
+            System.out.println("Su proxima cita será " + fecha);
         }else if(getEdad() > 45){
             fecha = fecha.plusDays(15);
-            System.out.println("Su proxima cita sera " + fecha);
+            System.out.println("Su proxima cita será " + fecha);
         }else{
             fecha = fecha.plusDays(90);
-            System.out.println("Su proxima cita sera " + fecha);
+            System.out.println("Su proxima cita será " + fecha);
         }setProxima_cita(fecha);
     
 
